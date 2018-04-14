@@ -1,11 +1,13 @@
 #!_*_coding:utf-8_*_
 #__author__:"Alex Li"
 
-'''
+"""
 handle all the database interactions
-'''
+"""
 import json,time ,os
 from  conf import settings
+
+
 def file_db_handle(conn_params):
     '''
     parse the db file path
@@ -27,7 +29,6 @@ def db_handler():
         return file_db_handle(conn_params)
     elif conn_params['engine'] == 'mysql':
         pass #todo
-
 
 
 def file_execute(sql,**kwargs):
